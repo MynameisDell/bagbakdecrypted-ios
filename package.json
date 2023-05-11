@@ -1,0 +1,45 @@
+{
+  "name": "bagbak",
+  "version": "2.6.5",
+  "description": "Dump iOS app from a jailbroken device, based on frida.re",
+  "main": "go.js",
+  "scripts": {
+    "prepack": "npm run build",
+    "build": "npm --prefix agent run build",
+    "watch": "npm --prefix agent run watch"
+  },
+  "author": "CodeColorist",
+  "license": "MIT",
+  "bin": {
+    "bagbak": "./go.js"
+  },
+  "files": [
+    "/agent.dist.js",
+    "/go.js",
+    "/lib/"
+  ],
+  "devDependencies": {
+    "@types/frida-gum": "^18.3.1",
+    "@types/node": "^18.15.11",
+    "frida-compile": "^10.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "cli-progress": "^3.8.2",
+    "commander": "^5.1.0",
+    "frida": "^16.0.11",
+    "ssh2": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiChou/bagbak.git"
+  },
+  "keywords": [
+    "ios",
+    "dump"
+  ],
+  "bugs": {
+    "url": "https://github.com/ChiChou/bagbak/issues"
+  },
+  "homepage": "https://github.com/ChiChou/bagbak#readme"
+}
